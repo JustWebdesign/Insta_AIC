@@ -1,0 +1,88 @@
+// Variablen
+    $primary-font: 'Poppins';
+    $fallback-font: sans-serif;
+    $primary-red: #a9172c;
+    $green: #274029;
+    $highlight-grey: rgba(255, 255, 255, 0.247);
+    $lighter-grey: #d3d3d3;
+    $dark-grey: #7a7d7d;
+    $snow-grey: #fffbfe;
+    $white: #fff;
+    $black: #000;
+    $text-shadow-text: 0 0 5px $black; 
+/* === GLOBALES === */
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    font-family: $primary-font, $fallback-font;
+    margin: 0;
+    background-color: transparent;
+
+}
+head{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &::link {
+        color: black;
+    }
+    &::visited {
+        color: black;
+    }
+    &::hover {
+        color: black;
+    }
+    &::active {
+        color: black;
+    }
+}
+
+// Generelles
+
+.intro-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+}
+.hover-background {
+    background-color: $highlight-grey;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    transition: all .75s;
+}
+//Header
+#header {
+    border-bottom: solid 5px $black;
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+//Main Section
+#main-content {
+    background-color: $lighter-grey;
+    display: flex;
+    width: 100%;
+}
+
+
